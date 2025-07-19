@@ -41,9 +41,13 @@ nav a:link{
     text-decoration: none;
 }
 nav a:hover{
-    color: yellowgreen;
+    color: rgb(50, 169, 205);
     text-decoration: none;
 }
+
+nav a:visited{
+    color: white;
+    text-decoration: none;}
 
 footer{
     width:100%;
