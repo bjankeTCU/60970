@@ -24,6 +24,7 @@ nav{
     display: flex;
     align-items: center;
     padding-left: 10%;
+    box-sizing: border-box;
 }
 nav ul {
     list-style-type: none;
@@ -52,6 +53,7 @@ footer{
     display: flex;
     align-items: center;
     padding-left: 10%;
+    box-sizing: border-box;
 }
 footer ul {
     list-style-type: none;
