@@ -1,5 +1,5 @@
 h1, h2{
-    color: blue;
+    color: rgb(42, 182, 192);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h2{
@@ -79,8 +79,20 @@ footer a:hover{
     height: 70vh;
     /* Fallback color if image fails to load */
     background-color: green;
+
+     /* Multiple backgrounds: gradient first, then image */
+    background-image:
+    /* Linear gradient overlay */
+        linear-gradient(
+            to right,                    /* Direction: left to right */
+            transparent 0%,              /* Start: fully transparent */
+            transparent 20%,             /* Stay transparent until 30% */
+            rgba(60, 101, 104, 0.5) 60%,     /* Begin darkening at 60% */
+            rgba(52, 154, 161, 0.9) 100%     /* End: 90% opacity black */
+        ),
+        /* Background image (rendered behind gradient) */
     /* Background image path - relative to CSS file */
-    background-image: url('../../images/Web Banner Water.png');
+    url('../../images/Web Banner Water.png');
     /* Scale image to cover entire container, may crop */
     background-size: cover;
     /* Center the background image */
