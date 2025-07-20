@@ -171,4 +171,5 @@ footer a:hover{
 
 img {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Horizontal offset, Vertical offset, Blur radius, Color */
+    border: 5px solid #555; /* 5px wide, solid, dark gray border */
 }
