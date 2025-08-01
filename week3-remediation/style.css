@@ -54,7 +54,7 @@ p, .body-text {
 }
 
 h1, h2{
-    color: #388e3c;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;    
 }
@@ -64,8 +64,12 @@ h1{
 h2{
     font-size: 1.5em; 
     font-style: oblique
-  
-}
+  }
+h3{
+    color: #388e3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
 
 nav{
     width:100%;
@@ -194,7 +198,7 @@ main{
 }       
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 20px 0;
 }
