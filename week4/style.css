@@ -164,6 +164,13 @@ nav{
     box-sizing: border-box;
 }
 
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -173,6 +180,7 @@ nav ul {
 }
 nav li{
     font-size: 1em;
+    margin-bottom: 10px;
 }
 nav a:link{
     color: white;
@@ -180,7 +188,7 @@ nav a:link{
 }
 nav a:hover{
     color: #00cc32;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 nav a:visited{
@@ -253,6 +261,17 @@ main{
   gap: 20px;
 }
 
+.feature-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.feature-link:hover div {
+  transform: translateY(-2px);
+  transition: transform 0.2s cubic-bezier(ease);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -267,7 +286,7 @@ main{
     /* Full width across container */
     width: 100%;
     /* Height = 70% of viewport height (responsive) */
-    height: 60vh;
+    height: 70vh;
     /* Fallback color if image fails to load */
     background-color: #0aaf30;
     /* Background image path - relative to CSS file */
@@ -280,14 +299,20 @@ main{
     background-repeat: no-repeat;
     /* Enable flexbox for positioning control */
     display: flex;
+    flex-direction: column;
     /* Center content vertically */
-    align-items: left;
+    align-items: flex-start;
     /* Push content to the right side */
-    justify-content: flex-start;
+    justify-content: center;
     /* Allow absolute positioning of child elements */
     position: relative;
     padding-right: 40px;
     
+}
+.banner h1,h2, .banner p {
+  position: relative;
+  z-index: 1;
+  text-align: left;
 }
 
 .GL-oath {
@@ -320,11 +345,11 @@ img {
 
 @media (min-width: 768px) {
   .features {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .gallery {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
 /* Mobile styles for screens 768px and smaller */
