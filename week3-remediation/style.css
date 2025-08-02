@@ -168,7 +168,7 @@ main{
     /* Full width across container */
     width: 100%;
     /* Height = 70% of viewport height (responsive) */
-    height: 50vh;
+    height: 60vh;
     /* Fallback color if image fails to load */
     background-color: #0aaf30;
     /* Background image path - relative to CSS file */
@@ -180,13 +180,15 @@ main{
     /* Don't repeat the background image */
     background-repeat: no-repeat;
     /* Enable flexbox for positioning control */
-    display: grid;
+    display: flex;
     /* Center content vertically */
     align-items: left;
     /* Push content to the right side */
     justify-content: flex-start;
     /* Allow absolute positioning of child elements */
-    position: relative
+    position: relative;
+    padding-right: 40px;
+    
 }
 
 .GL-oath {
