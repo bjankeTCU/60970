@@ -4,7 +4,9 @@
   gap: 20px;
 }
 
-.header { background-color: black; color: white; }
+.header { background-color: black; color: white; 
+        width: 100%;
+}
 /* ADDED 70VH HERO BACKGROUND IMAGE WITH SQUIRE BASS */
 .hero { 
   background-color: green; 
@@ -20,7 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-right: 40px;
 }
 
@@ -205,17 +207,28 @@ a{
 .hero { background-color: #0aaf30; color: white; }
 .features div { background-color: #F18F01; color: white; }
 .gallery div { background-color: #ddd; }
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.card {
+  background-color: #00cc32;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  font-weight: bold;
 }
 
-features {
+.features {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 /* ADDED STYLING FOR CLICKABLE FEATURE CARDS */
@@ -227,7 +240,7 @@ features {
 
 .feature-link:hover div {
   transform: translateY(-2px);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s cubic-bezier(ease);
 }
 
 /* ADDED STYLING FOR THUMBNAIL IMAGES IN FEATURE CARDS */
@@ -241,7 +254,7 @@ features {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
 }
 
 /* ADDED BASIC NAVIGATION STYLING FOR RESPONSIVE NAV */
@@ -262,7 +275,7 @@ features {
     }
     
     /* Stack navigation items vertically */
-    nav ul {
+    .nav-menu ul {
         flex-direction: column;
         gap: 15px;
     }
