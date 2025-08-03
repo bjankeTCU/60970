@@ -80,60 +80,6 @@ body {
     max-height: 300px;
 }
 
-/* Add to the top of your CSS file */
-:root {
-  --font-size-sm: clamp(0.8rem, 1.5vw, 0.9rem);
-  --font-size-base: clamp(1rem, 2vw, 1.125rem);
-  --font-size-lg: clamp(1.25rem, 3vw, 1.5rem);
-  --font-size-xl: clamp(1.5rem, 4vw, 2rem);
-  --font-size-xxl: clamp(2rem, 6vw, 3rem);
-  --font-size-hero: clamp(2.5rem, 8vw, 4rem);
-  
-  --line-height-tight: 1.2;
-  --line-height-normal: 1.5;
-  --line-height-loose: 1.7;
-}
-
-/* Heading Styles */
-h1, .h1 {
-  font-size: var(--font-size-hero);
-  line-height: var(--line-height-tight);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-h2, .h2 {
-  font-size: var(--font-size-xxl);
-  line-height: var(--line-height-tight);
-  font-weight: 600;
-  margin-bottom: 0.875rem;
-}
-
-h3, .h3 {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-normal);
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-/* Body Text */
-p, .body-text {
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-normal);
-  margin-bottom: 1.5rem;
-  max-width: 65ch; /* Optimal reading width */
-}
-
-.lead-text {
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-loose);
-  font-weight: 300;
-}
-
-.small-text {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-normal);
-}
 
 h1, h2{
     color: white;
@@ -196,6 +142,13 @@ nav a:visited{
     text-decoration: none;
   }
 
+  GL-oath {
+    text-align: center;
+    font-style: italic;
+    font-size:larger;
+    gap: 10px;
+}
+
 li, a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.0em;
@@ -224,7 +177,7 @@ main{
   gap: 20px;
   }
 
-.header, .banner, .features div, .gallery div {
+.header, .hero, .features div, .gallery div {
   background-color: #ccc;
   padding: 20px;
   border-radius: 5px;
@@ -234,7 +187,7 @@ main{
 }
 
 .header { background-color: black; color: #00cc32; }
-.banner { background-color: #0aaf30; color: white; }
+.hero { background-color: #0aaf30; color: white; }
 .features div { background-color: #F18F01; color: white; }
 .gallery div { background-color: #ddd; }
 
@@ -282,45 +235,29 @@ main{
     width: 100%;
 }
 
-.banner {
-    /* Full width across container */
-    width: 100%;
-    /* Height = 70% of viewport height (responsive) */
-    height: 70vh;
-    /* Fallback color if image fails to load */
-    background-color: #0aaf30;
-    /* Background image path - relative to CSS file */
-    background-image: url(images/Banner.jpg);
-        /* Scale image to cover entire container, may crop */
-    background-size: cover;
-    /* Center the background image */
-    background-position: center;
-    /* Don't repeat the background image */
-    background-repeat: no-repeat;
-    /* Enable flexbox for positioning control */
-    display: flex;
-    flex-direction: column;
-    /* Center content vertically */
-    align-items: flex-start;
-    /* Push content to the right side */
-    justify-content: center;
-    /* Allow absolute positioning of child elements */
-    position: relative;
-    padding-right: 40px;
-    
+
+.header { background-color: black; color: white; }
+/* ADDED 70VH HERO BACKGROUND IMAGE WITH SQUIRE BASS */
+.hero { 
+  background-color: white; 
+  color: white; 
+  background-image: url(images/Banner.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 40px;
 }
-.banner h1,h2, .banner p {
+.hero h1,h2, .hero p {
   position: relative;
   z-index: 1;
   text-align: left;
 }
-
-.GL-oath {
-    text-align: center;
-    font-style: italic;
-    font-size:larger;
-    gap: 10px;
-        }
 
  .essay-text {
     gap: 10px;
